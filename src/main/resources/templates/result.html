@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <title>The result page.</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <p th:text="'id: ' + ${comment.name}" />
+    <p th:text="'content: ' + ${comment.content}" />
+    <a href="/comment">Submit another comment</a>
+</body>
+</html>
