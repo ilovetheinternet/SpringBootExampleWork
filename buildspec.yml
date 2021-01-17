@@ -1,4 +1,12 @@
+version: 0.2
+
+
+
+
 phases:
+  install:
+    commands:
+      - echo Maybe it needs install commands. we're gonna try adding them before adding the artifacts section.
   build:
     commands:
       - ./gradlew bootRun
