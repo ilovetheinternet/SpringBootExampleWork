@@ -11,6 +11,14 @@ https://spring.io/guides/gs/actuator-service/
 Used
 https://www.w3schools.com/w3css/w3css_sidebar.asp
 
+
+__
+
+possibly used
+
+https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html#build-spec-ref-example
+
+
 ---
 
 Considered
