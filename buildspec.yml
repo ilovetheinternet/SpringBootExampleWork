@@ -9,4 +9,4 @@ phases:
       - echo Maybe it needs an install command. let us try adding one before adding the artifacts section.
   build:
     commands:
-      - ./gradlew bootRun
+      - ./gradlew bootJar
