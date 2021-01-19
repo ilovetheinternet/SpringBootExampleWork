@@ -27,3 +27,40 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_website&st
 ---
 
 change anything
+
+
+---
+
+https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html
+
+
+https://us-east-2.console.aws.amazon.com/ecr/repositories/public/463796021282/spring-boot-example-work?region=us-east-2
+
+view push commands
+
+do the login one: 
+
+    aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/v9u5b3u6
+
+replace the build docker image one with (from https://spring.io/guides/gs/spring-boot-docker/):
+
+    ./gradlew build
+
+    mkdir -p build/dependency && (cd build/dependency; jar -xf ../libs/*.jar)
+    
+    docker build --build-arg DEPENDENCY=build/dependency -t spring-boot-example-work .
+    
+    ./gradlew bootBuildImage --imageName=spring-boot-example-work
+
+back to aws's ecr pull commands:
+
+    docker tag spring-boot-example-work:latest public.ecr.aws/v9u5b3u6/spring-boot-example-work:latest
+
+    docker push public.ecr.aws/v9u5b3u6/spring-boot-example-work:latest
+
+
+---
+
+    in aws ecr, copy uri of newly pushed docker image
+
+    in aws amplify
