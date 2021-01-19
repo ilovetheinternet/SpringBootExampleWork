@@ -64,3 +64,21 @@ back to aws's ecr pull commands:
     in aws ecr, copy uri of newly pushed docker image
 
     in aws amplify
+
+
+previous amplify.yml 
+
+    version: 1
+    frontend:
+    phases:
+    # IMPORTANT - Please verify your build commands
+    build:
+    commands: ./gradlew bootRun
+    artifacts:
+    # IMPORTANT - Please verify your build output directory
+    baseDirectory: .
+    files:
+    - '**/*'
+    cache:
+    paths: []
+
