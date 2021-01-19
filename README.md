@@ -82,5 +82,4 @@ previous amplify.yml
     cache:
     paths: []
 
-maybe nothing needs to happen in build stage for springboot
 
