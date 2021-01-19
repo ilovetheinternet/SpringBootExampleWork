@@ -83,4 +83,4 @@ previous amplify.yml
     paths: []
 
 
-docker run -e "SPRING_PROFILES_ACTIVE=prod" -p 8080:8080 -t spring-boot-example-work
+docker run -e "SPRING_PROFILES_ACTIVE=prod" -t spring-boot-example-work
